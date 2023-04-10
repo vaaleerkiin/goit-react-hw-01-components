@@ -10,7 +10,7 @@ import {
 
 export const Statistics = ({ stats }) => (
   <Statistic>
-    <Title>Upload stats</Title>
+    <Title>UPLOAD STATS</Title>
     <List>
       {stats.map(el => (
         <Item key={el.id} quantity={stats.length} bgColor={getRandomHexColor()}>
