@@ -22,9 +22,9 @@ export const Statistics = ({ stats, title }) => (
     </List>
   </Statistic>
 );
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
+const getRandomHexColor = () =>
+  `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.exact({

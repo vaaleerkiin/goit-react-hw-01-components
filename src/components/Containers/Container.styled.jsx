@@ -9,4 +9,6 @@ export const Container = styled.section`
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
 `;

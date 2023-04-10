@@ -33,6 +33,7 @@ export const Item = styled.li`
   flex-direction: column;
   width: calc(100% / ${props => props.quantity});
   background-color: ${props => props.bgColor};
+  border: ${props => props.bgColor} solid 1px;
   padding-top: 16px;
   padding-bottom: 16px;
 `;
