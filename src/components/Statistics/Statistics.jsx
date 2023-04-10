@@ -8,9 +8,10 @@ import {
   Percentage,
 } from './Statistics.styled';
 
-export const Statistics = ({ stats }) => (
+export const Statistics = ({ stats, title }) => (
   <Statistic>
-    <Title>UPLOAD STATS</Title>
+    {title && <Title>{title.toUpperCase()}</Title>}
+
     <List>
       {stats.map(el => (
         <Item key={el.id} quantity={stats.length} bgColor={getRandomHexColor()}>
@@ -32,4 +33,5 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
+  title: PropTypes.string,
 };
