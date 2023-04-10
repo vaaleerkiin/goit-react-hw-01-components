@@ -24,4 +24,3 @@ export const App = () => {
     </Wrap>
   );
 };
-console.log(data);
