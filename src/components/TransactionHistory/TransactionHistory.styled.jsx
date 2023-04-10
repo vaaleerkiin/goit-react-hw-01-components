@@ -5,7 +5,7 @@ export const Transaction = styled.table`
   overflow: hidden;
   padding: 0;
   margin: 0;
-  width: 700px;
+  width: 1000px;
 
   thead {
     th {
